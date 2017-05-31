@@ -21,6 +21,11 @@ node {
           sh 'apt-get -y install docker-engine'
 
           sh 'docker build -t angular-test-project .'*/
+
+
+          sh 'apt-get update'
+          sh 'apt-get install docker.io -y'
+          sh 'docker build -t angular-test-project .'
         }
      }
 }
